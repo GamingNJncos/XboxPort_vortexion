@@ -17,12 +17,18 @@ I wanted to try porting a python game, here we are. Enjoy.
 |-------|-------|
 | Original title | Vortexion |
 | Original platform | [Pyxel](https://github.com/kitao/pyxel) |
-| Original source | [ [helpcomputer](https://github.com/helpcomputer/vortexion)|
-| Port status | BOOTABLE |
+| Original source |  [helpcomputer](https://github.com/helpcomputer/vortexion)|
+| Port status | BOOTABLE/Playable |
 | Build date | 2026-02-25 |
 | XBE size | 1.1M |
 
 ---
+## Known Issues
+Some in game colors did not port well.
+Edge collision (top and bottom of screen) may behave slightly differntly
+Audio required quite a bit of tinkering to play without major audio clipping
+
+It's close enough for me but I'm pubishing the modified source if anyone else would like to go for a PURE ACCURACY port. 
 
 ## Download
 
