@@ -1,0 +1,17 @@
+bin/
+obj/
+*.o
+*.a
+*.exe
+*.iso
+*.log
+*.d
+captures/
+SCRUB_REPORT.txt
+_release_staging/
+.public-repo-name
+assets/*.py
+assets/**/*.py
+BOSS_COLOR_SAMPLES.md
+accuracy_review/
+main.exe
