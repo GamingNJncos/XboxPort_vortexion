@@ -23,6 +23,16 @@ Copy to your Xbox: `E:\Games\vortexion\default.xbe`
 
 ---
 
+## Proof
+
+| | |
+|---|---|
+| ![Gameplay](./proof1.gif) | ![Gameplay](./proof2.gif) |
+
+_Replace proof1.gif and proof2.gif with actual gameplay captures._
+
+---
+
 # Xbox Port — Added Features
 
 This document describes features added during the Xbox port that are not present
@@ -84,3 +94,12 @@ make
 
 The compiled XBE will be at `bin/default.xbe`.
 Copy to Xbox: `E:\Games\vortexion\default.xbe`
+
+---
+
+## Credits
+
+| Role | Credit |
+|------|--------|
+| Original game | _(add author / link)_ |
+| Xbox port | [GamingNJncos](https://github.com/GamingNJncos) |
