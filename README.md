@@ -8,6 +8,7 @@
 |-------|-------|
 | Original title | Vortexion |
 | Original platform | Unknown |
+| Original source | _(add link)_ |
 | Port status | BOOTABLE |
 | Build date | 2026-02-25 |
 | XBE size | 1.1M |
@@ -65,9 +66,21 @@ Full task history: [TASK_LOG.md](./TASK_LOG.md)
 
 ## Building from Source
 
-Requires [nxdk](https://github.com/XboxDev/nxdk) and LLVM cross-compiler.
+This port targets the original Xbox and is built with [nxdk](https://github.com/XboxDev/nxdk), the open-source New Xbox Development Kit.
+
+### Prerequisites
+
+1. **nxdk** — [https://github.com/XboxDev/nxdk](https://github.com/XboxDev/nxdk)
+   Follow the [Getting Started guide](https://github.com/XboxDev/nxdk/wiki/Getting-Started) for your platform.
+2. **LLVM/Clang** cross-compiler (required by nxdk — see nxdk docs)
+3. Set the `NXDK_DIR` environment variable to your nxdk install path
+
+### Build
 
 ```bash
-# Clone nxdk, set NXDK_DIR, then:
+export NXDK_DIR=/path/to/nxdk
 make
 ```
+
+The compiled XBE will be at `bin/default.xbe`.
+Copy to Xbox: `E:\Games\vortexion\default.xbe`
