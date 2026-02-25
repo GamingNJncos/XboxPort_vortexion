@@ -7,9 +7,7 @@ I wanted to try porting a python game, here we are. Enjoy.
 
 ## Proof
 
-| | |
-|---|---|
-![](/images/[REPLACEME]?raw=true "")![](/images/[REPLACEME]?raw=true "")
+![](/1st.gif?raw=true "")
 
 ## Source Game
 
