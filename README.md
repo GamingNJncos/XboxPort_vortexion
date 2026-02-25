@@ -1,42 +1,44 @@
 # XboxPort: Vortexion
+Vortexion is a MSX/SG-1000 inspired shoot-em-up written in Python and uses the Pyxel game engine.
+I wanted to try porting a python game, here we are. Enjoy.
+
 
 > Xbox homebrew port built with [nxdk](https://github.com/XboxDev/nxdk).
+
+## Proof
+
+| | |
+|---|---|
+![](/images/[REPLACEME]?raw=true "")![](/images/[REPLACEME]?raw=true "")
 
 ## Source Game
 
 | Field | Value |
 |-------|-------|
 | Original title | Vortexion |
-| Original platform | Unknown |
-| Original source | _(add link)_ |
+| Original platform | [Pyxel](https://github.com/kitao/pyxel) |
+| Original source | [ [helpcomputer](https://github.com/helpcomputer/vortexion)|
 | Port status | BOOTABLE |
 | Build date | 2026-02-25 |
 | XBE size | 1.1M |
+
+---
 
 ## Download
 
 Latest XBE: [`XBE/vortexion.xbe`](./XBE/vortexion.xbe)
 
-Additional XBE variants available in the [`XBE/`](./XBE/) folder.
+Additional XBE variants *may be* available in the [`XBE/`](./XBE/) folder.
 
 Copy to your Xbox: `E:\Games\vortexion\default.xbe`
-
----
-
-## Proof
-
-| | |
-|---|---|
-| ![Gameplay](./proof1.gif) | ![Gameplay](./proof2.gif) |
-
-_Replace proof1.gif and proof2.gif with actual gameplay captures._
-
+Bootable ISO: If you want to wrap to make this bootable in an iso make sure to rename to default.xbe then 
+ `extract-xiso -c /tmp/<tmpdir> lastFiles/<project>.iso`
+ 
 ---
 
 # Xbox Port — Added Features
 
-This document describes features added during the Xbox port that are not present
-in the original Python/Pyxel source game.
+Features and outright sins committed during the Xbox port that are not present in the original Python/Pyxel source game.
 
 ## Controls
 
@@ -47,11 +49,13 @@ in the original Python/Pyxel source game.
 | Pause / Unpause | Start | — |
 
 ## Debug / Development Features
+Note these features are enabled and disabled exclusively from the pause menu. 
+You *MUST* Start/PAUSE, KEYCOMBO (Confirm visual Indicator), Start/PAUSE.
 
 | Feature | Button Combo | Notes |
 |---------|-------------|-------|
-| FPS Counter | A+B+Start (PAUSED only) | Toggle. Green≥50fps Yellow≥40 Blue≥30 Red<30 |
-| Invincibility | X+Y+Start (PAUSED only) | Toggle. Auto-fires. "I" indicator top-right. Resets on title screen. |
+| FPS Counter | Press and hold A+B *while held* Press Start (PAUSED only) | **Displays BOTTOM RIGHT** Green≥50fps Yellow≥40 Blue≥30 Red<30 |
+| Invincibility + Auto Fire | Press and hold X+Y *while held* Press Start (PAUSED only) | Toggle. Auto-fires. **"I" indicator top-right**. Resets on title screen. |
 
 ## Visual / Branding Additions
 
@@ -98,8 +102,12 @@ Copy to Xbox: `E:\Games\vortexion\default.xbe`
 ---
 
 ## Credits
+- Game design and art by [badcomputer](https://twitter.com/badcomputer0)
+- Music generator [frenchbread1222](https://github.com/shiromofufactory/8bit-bgm-generator)
+- Font by [Damien Guard](https://damieng.com/)
 
-| Role | Credit |
-|------|--------|
-| Original game | _(add author / link)_ |
-| Xbox port | [GamingNJncos](https://github.com/GamingNJncos) |
+
+Xbox port  [GamingNJncos](https://github.com/GamingNJncos) |
+
+## License
+[MIT license](http://en.wikipedia.org/wiki/MIT_License)
